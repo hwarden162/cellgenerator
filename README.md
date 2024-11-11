@@ -14,3 +14,27 @@ ss = SpatialStain(20, 20)
 img = Image((1000, 1000), em, ss)
 img.plot((80, 80), rotate=35)
 ```
+
+## Installation
+
+cellgenerator can be installed via pip. If you would like to just use cellgenerator it can be downloaded straight from GitHub using:
+
+```bash
+pip install git+https://github.com/hwarden162/cellgenerator.git
+```
+
+or you can clone the repo yourself and install from your local copy
+
+```bash
+git clone git@github.com:hwarden162/cellgenerator.git
+cd cellgenerator
+pip install -e .
+```
+
+If you are wanting to develop cellgenerator you will want to install the dev dependencies too
+
+```bash
+git clone git@github.com:hwarden162/cellgenerator.git
+cd cellgenerator
+pip install -e '.[dev]'
+```
